@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudTask - AWS Serverless App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>☁️ CloudTask</h1>
+
+        <p class="subtitle">
+            Serverless Task Management Application using AWS
+        </p>
+
+
+        <input 
+        type="text" 
+        id="taskName" 
+        placeholder="Enter Task Name">
+
+
+        <input 
+        type="text" 
+        id="description" 
+        placeholder="Enter Description">
+
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+
+
+        <h2>My Tasks</h2>
+
+
+        <div id="taskList"></div>
+
+
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
