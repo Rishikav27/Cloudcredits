@@ -1,40 +1,46 @@
 
 
-##  How It Works
+##  Working Process
 
-1. The frontend application is hosted using Amazon S3.
-2. User actions send requests to Amazon API Gateway.
-3. API Gateway triggers AWS Lambda functions.
-4. Lambda performs backend operations.
-5. Task data is stored and retrieved from DynamoDB.
+1. The frontend application is deployed using Amazon S3 static website hosting.
+
+2. Users interact with the web interface to perform task operations.
+
+3. Requests are sent from JavaScript frontend to Amazon API Gateway.
+
+4. API Gateway invokes AWS Lambda functions.
+
+5. Lambda processes CRUD operations.
+
+6. DynamoDB stores and manages application data.
 
 
-## 📸 Project Screenshots
+##  AWS Services Implementation
 
-### Web Application
-![Website](Serverless-Web-App/Screenshots/website.png.jpeg)
-
+### Amazon S3
+Used for hosting the static frontend application.
 
 ### API Gateway
-![API Gateway](Serverless-Web-App/Screenshots/api.png.jpeg)
-
+Created REST endpoints for communication between frontend and backend.
 
 ### AWS Lambda
-![Lambda](Serverless-Web-App/Screenshots/lambda.png.jpeg)
-
+Implemented serverless backend logic using Python.
 
 ### DynamoDB
-![DynamoDB](Serverless-Web-App/Screenshots/dynamo.png.jpeg)
+Used as a NoSQL database for storing task information.
+
+### IAM
+Configured permissions for secure service communication.
 
 
+##  Key Learnings
 
-##  Learning Outcomes
-
-- Designed serverless architecture on AWS
-- Created REST APIs using API Gateway
-- Developed Lambda functions with Python
-- Integrated DynamoDB database
-- Hosted static website using Amazon S3
+- Designed a serverless cloud architecture
+- Created and deployed AWS Lambda functions
+- Integrated API Gateway with Lambda
+- Connected Lambda with DynamoDB
+- Hosted frontend application on AWS S3
+- Implemented end-to-end cloud application deployment
 
 
 ##  Developed By
